@@ -1,4 +1,4 @@
-package com.yx.bootswagger.controller;
+package com.yx.bootswagger.shiro.controller;
 
 import javax.servlet.http.HttpSession;
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.yx.bootswagger.utils.ActiverUser;
+import com.yx.bootswagger.shiro.utils.ActiverUser;
 
 @Controller
 @RequestMapping("login")

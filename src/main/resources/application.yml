@@ -30,7 +30,7 @@ mybatis:
   configuration: 
    log-prefix: mybatis
  #  log-impl: org.apache.ibatis.logging.log4j.Log4jImpl
-  type-aliases-package: com.yx.bootswagger.domain
+  type-aliases-package: com.yx.bootswagger.shiro.domain
 
 #shiro的定义配置
 shiro:

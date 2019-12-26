@@ -1,6 +1,6 @@
-package com.yx.bootswagger.mapper;
+package com.yx.bootswagger.shiro.mapper;
 
-import com.yx.bootswagger.domain.User;
+import com.yx.bootswagger.shiro.domain.User;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userid);

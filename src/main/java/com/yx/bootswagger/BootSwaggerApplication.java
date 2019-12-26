@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan(basePackages = {"com.yx.bootswagger.mapper"})
+@MapperScan(basePackages = {"com.yx.bootswagger.shiro.mapper"})
 public class BootSwaggerApplication {
 
     public static void main(String[] args) {

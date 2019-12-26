@@ -1,8 +1,8 @@
-package com.yx.bootswagger.mapper;
+package com.yx.bootswagger.shiro.mapper;
 
 import java.util.List;
 
-import com.yx.bootswagger.domain.Permission;
+import com.yx.bootswagger.shiro.domain.Permission;
 
 public interface PermissionMapper {
     int deleteByPrimaryKey(Integer perid);

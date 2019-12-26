@@ -1,7 +1,7 @@
 package com.yx.bootswagger.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
-import com.yx.bootswagger.realm.UserRealm;
+import com.yx.bootswagger.shiro.realm.UserRealm;
 import lombok.Data;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;

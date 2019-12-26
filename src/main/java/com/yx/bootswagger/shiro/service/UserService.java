@@ -1,6 +1,6 @@
-package com.yx.bootswagger.service;
+package com.yx.bootswagger.shiro.service;
 
-import com.yx.bootswagger.domain.User;
+import com.yx.bootswagger.shiro.domain.User;
 
 public interface UserService {
 

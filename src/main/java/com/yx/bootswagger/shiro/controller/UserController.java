@@ -1,12 +1,10 @@
-package com.yx.bootswagger.controller;
+package com.yx.bootswagger.shiro.controller;
 
-import com.yx.bootswagger.domain.User;
-import com.yx.bootswagger.service.UserService;
+import com.yx.bootswagger.shiro.domain.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 

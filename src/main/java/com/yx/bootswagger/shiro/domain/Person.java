@@ -1,9 +1,10 @@
-package com.yx.bootswagger.domain;
+package com.yx.bootswagger.shiro.domain;
 
+import com.alibaba.excel.metadata.BaseRowModel;
 import lombok.Data;
 
 @Data
-public class Person {
+public class Person extends BaseRowModel {
 
 	private Integer id;
 	private String name;

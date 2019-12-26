@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>用户数据</title>
 <link rel="stylesheet" th:href="@{/resources/layui/css/layui.css}" media="all">
+	<script th:src="@{/resources/assets/js/jquery.js}"></script>
 <script th:src="@{/resources/layui/layui.js}" charset="utf-8"></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
 			style="margin-top: 20px;">
 			<legend>用户数据</legend>
 		</fieldset>
-
+	<span th:text="${#httpSession.getAttribute().getServerPort()}"></span>
 <hr>
 <table class="layui-hide" id="test"></table>
 
@@ -24,15 +25,21 @@
 	<button class="layui-btn layui-btn-sm"  shiro:hasPermission="person:add" lay-event="getCheckData">添加</button>
 	<button class="layui-btn layui-btn-sm" shiro:hasPermission="person:update" lay-event="getCheckLength">修改</button>
 	<button class="layui-btn layui-btn-sm" shiro:hasPermission="person:delete"  lay-event="isAll">删除</button>
-	<button class="layui-btn layui-btn-sm"  shiro:hasPermission="person:export" lay-event="isAll">导出</button>
+	<button class="layui-btn layui-btn-sm" th:onclick="lusfer()"  shiro:hasPermission="person:export" lay-event="isAll">导出</button>
   </div>
 </div>
 
 <script type="text/javascript">
+	var ctx = "[[@{/}]]";
 layui.use('table', function(){
 	  var table = layui.table;
-	  
-	  table.render({
+
+
+
+
+
+	  console.log(ctx)
+	  table.render( {
 	    elem: '#test'
 	    ,url:'/person/loadAllPerson'
 	    ,toolbar: '#toolbarDemo'
@@ -46,7 +53,13 @@ layui.use('table', function(){
 	      }}
 	    ] ]
 	  });
+
+
 	});
+ function lusfer() {
+	alert("lusfer")
+	location.href = ctx +"export/person"
+}
 </script>
 </body>
 </html>

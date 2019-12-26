@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yx.bootswagger.mapper.PermissionMapper">
+<mapper namespace="com.yx.bootswagger.shiro.mapper.PermissionMapper">
 	<resultMap id="BaseResultMap"
-		type="com.yx.bootswagger.domain.Permission">
+		type="com.yx.bootswagger.shiro.domain.Permission">
 		<id column="perid" jdbcType="INTEGER" property="perid" />
 		<result column="pername" jdbcType="VARCHAR" property="pername" />
 		<result column="percode" jdbcType="VARCHAR" property="percode" />
@@ -22,7 +22,7 @@
 		delete from permission
 		where perid = #{perid,jdbcType=INTEGER}
 	</delete>
-	<insert id="insert" parameterType="com.yx.bootswagger.domain.Permission">
+	<insert id="insert" parameterType="com.yx.bootswagger.shiro.domain.Permission">
 		insert into permission (perid, pername, percode
 		)
 		values (#{perid,jdbcType=INTEGER}, #{pername,jdbcType=VARCHAR},
@@ -30,7 +30,7 @@
 		)
 	</insert>
 	<insert id="insertSelective"
-		parameterType="com.yx.bootswagger.domain.Permission">
+		parameterType="com.yx.bootswagger.shiro.domain.Permission">
 		insert into permission
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			<if test="perid != null">
@@ -56,7 +56,7 @@
 		</trim>
 	</insert>
 	<update id="updateByPrimaryKeySelective"
-		parameterType="com.yx.bootswagger.domain.Permission">
+		parameterType="com.yx.bootswagger.shiro.domain.Permission">
 		update permission
 		<set>
 			<if test="pername != null">
@@ -69,7 +69,7 @@
 		where perid = #{perid,jdbcType=INTEGER}
 	</update>
 	<update id="updateByPrimaryKey"
-		parameterType="com.yx.bootswagger.domain.Permission">
+		parameterType="com.yx.bootswagger.shiro.domain.Permission">
 		update permission
 		set pername = #{pername,jdbcType=VARCHAR},
 		percode = #{percode,jdbcType=VARCHAR}

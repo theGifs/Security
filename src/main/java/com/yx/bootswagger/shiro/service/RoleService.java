@@ -1,4 +1,4 @@
-package com.yx.bootswagger.service;
+package com.yx.bootswagger.shiro.service;
 
 import java.util.List;
 

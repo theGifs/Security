@@ -1,10 +1,10 @@
-package com.yx.bootswagger.realm;
+package com.yx.bootswagger.shiro.realm;
 
-import com.yx.bootswagger.domain.User;
-import com.yx.bootswagger.service.PermissionService;
-import com.yx.bootswagger.service.RoleService;
-import com.yx.bootswagger.service.UserService;
-import com.yx.bootswagger.utils.ActiverUser;
+import com.yx.bootswagger.shiro.domain.User;
+import com.yx.bootswagger.shiro.service.PermissionService;
+import com.yx.bootswagger.shiro.service.RoleService;
+import com.yx.bootswagger.shiro.service.UserService;
+import com.yx.bootswagger.shiro.utils.ActiverUser;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -15,7 +15,6 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 

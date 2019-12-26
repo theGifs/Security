@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yx.bootswagger.mapper.RoleMapper">
-  <resultMap id="BaseResultMap" type="com.yx.bootswagger.domain.Role">
+<mapper namespace="com.yx.bootswagger.shiro.mapper.RoleMapper">
+  <resultMap id="BaseResultMap" type="com.yx.bootswagger.shiro.domain.Role">
     <id column="roleid" jdbcType="INTEGER" property="roleid" />
     <result column="rolename" jdbcType="VARCHAR" property="rolename" />
   </resultMap>
@@ -18,11 +18,11 @@
     delete from role
     where roleid = #{roleid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.yx.bootswagger.domain.Role">
+  <insert id="insert" parameterType="com.yx.bootswagger.shiro.domain.Role">
     insert into role (roleid, rolename)
     values (#{roleid,jdbcType=INTEGER}, #{rolename,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.yx.bootswagger.domain.Role">
+  <insert id="insertSelective" parameterType="com.yx.bootswagger.shiro.domain.Role">
     insert into role
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="roleid != null">
@@ -41,7 +41,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yx.bootswagger.domain.Role">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yx.bootswagger.shiro.domain.Role">
     update role
     <set>
       <if test="rolename != null">
@@ -50,7 +50,7 @@
     </set>
     where roleid = #{roleid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yx.bootswagger.domain.Role">
+  <update id="updateByPrimaryKey" parameterType="com.yx.bootswagger.shiro.domain.Role">
     update role
     set rolename = #{rolename,jdbcType=VARCHAR}
     where roleid = #{roleid,jdbcType=INTEGER}

@@ -1,16 +1,13 @@
 package com.yx.bootswagger.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
-import com.yx.bootswagger.realm.UserRealm;
-import lombok.Data;
+import com.yx.bootswagger.shiro.realm.UserRealm;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.DelegatingFilterProxy;
 
 import java.util.HashMap;

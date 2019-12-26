@@ -1,4 +1,4 @@
-package com.yx.bootswagger.domain;
+package com.yx.bootswagger.shiro.domain;
 
 import lombok.Data;
 

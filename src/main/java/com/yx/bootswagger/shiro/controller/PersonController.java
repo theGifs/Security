@@ -1,4 +1,4 @@
-package com.yx.bootswagger.controller;
+package com.yx.bootswagger.shiro.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.yx.bootswagger.domain.Person;
+import com.yx.bootswagger.shiro.domain.Person;
 
 @Controller
 @RequestMapping("person")

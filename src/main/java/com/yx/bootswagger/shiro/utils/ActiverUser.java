@@ -1,8 +1,8 @@
-package com.yx.bootswagger.utils;
+package com.yx.bootswagger.shiro.utils;
 
 import java.util.List;
 
-import com.yx.bootswagger.domain.User;
+import com.yx.bootswagger.shiro.domain.User;
 import lombok.Data;
 
 @Data

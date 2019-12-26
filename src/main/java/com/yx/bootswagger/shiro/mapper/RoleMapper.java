@@ -1,8 +1,8 @@
-package com.yx.bootswagger.mapper;
+package com.yx.bootswagger.shiro.mapper;
 
 import java.util.List;
 
-import com.yx.bootswagger.domain.Role;
+import com.yx.bootswagger.shiro.domain.Role;
 
 public interface RoleMapper {
     int deleteByPrimaryKey(Integer roleid);
