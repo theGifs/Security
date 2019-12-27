@@ -67,7 +67,8 @@ public class SecondaryConfig {
         Map<String,String> map = new HashMap<>();
         map.put("hibernate.dialect",secondaryDialect);
         jpaProperties.setProperties(map);
-        return jpaProperties.getHibernateProperties(dataSource);
+//        return jpaProperties.getHibernateProperties(dataSource);
+        return null;
     } 
     
     @Bean(name = "transactionManagerSecondary")
