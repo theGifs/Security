@@ -48,3 +48,4 @@ shiro:
   logout-url: /login/logout
   authc-urls:
   - /**
+
