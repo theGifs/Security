@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <shiro.version>1.4.1</shiro.version>
+        <shiro.version>1.7.1</shiro.version>
         <!-- springboot2.0的版本中要使用2.0的  1.5的使用1.2.X的版本 -->
         <thymeleaf.shiro.version>2.0.0</thymeleaf.shiro.version>
     </properties>
